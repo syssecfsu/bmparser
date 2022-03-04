@@ -11,6 +11,11 @@ It provides a non-compliant implementation of bmparser and a viewer.
 > BMP files. 
 
 To build the programs on Linux, make sure you have a recent version of 
-go and c++ compiler installed. You also need to install the following dependencies.
+go and c++ compiler installed. You also need to install the following 
+dependencies.
 
-```# apt install libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev libglx-dev libgl1-mesa-dev libxxf86vm-dev```
+```sudo apt install libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev libglx-dev libgl1-mesa-dev libxxf86vm-dev```
+
+or
+
+```sudo dnf install libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel libXi-devel libGL-devel libXxf86vm-devel```
