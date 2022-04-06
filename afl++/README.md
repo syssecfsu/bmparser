@@ -105,11 +105,15 @@ AFL++ in a VM unless you have a fast computer. On Windows, you can run AFL++ in
 
     If you enable `ASAN`, you will immediately find an off-by-one bug on line 67. You need to fix it first.
 
-    The clang build will also complain a bug in line 125. You can leave it as is or fix it. Just record in your report.
+    The clang compiler will also complain a bug in line 125. You can leave it as is or fix it. Just record in your report.
 
 15. Use the following command to run AFL++ on bmp_parser. If everything is correct, you should get some crashes in a couple of minutes.
 
     `afl-fuzz -i ../bmp -o out -e bmp -D -- ./bmp_parser @@`
+
+Here is a screenshot:
+
+<img src="./scr.png" width="640">
 
 ## Fuzzing Python Implementation
 
