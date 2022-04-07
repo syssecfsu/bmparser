@@ -8,7 +8,7 @@ AFL++ in a VM unless you have a fast computer. On Windows, you can run AFL++ in
 
 If you have a Mac device, you can install Ubuntu 21.10 in a VM for VirtualBox, VMware Fusion, or Parallels.
 
-If you need to install a new VM, use the [network installer](https://ubuntu.com/download/alternative-downloads), and choose the minimal installation which will install a system without the GUI. This will make your system run faster.
+If you need to install a new VM, download [Ubuntu Server 21.10](https://ubuntu.com/download/server#releases), and choose the minimal options to install a system without GUI. This will make your system run faster.
 
 In the following, we will use WSL2 as an example:
 
@@ -169,7 +169,7 @@ To fuzz Python programs with AFL, you need to install python-afl. Follow the fol
 4. Fuzz your python program with the following command
 
     ```console
-    $ python-afl-fuzz -i <input> -o <output> -m none -t 4000 -D -M fuzzer01 -- ./parse_bmp_1.py @@
+    $ py-afl-fuzz -i <input> -o <output> -m none -t 4000 -D -M fuzzer01 -- ./parse_bmp_1.py @@
     ```
 
     Replace `<input>` and `<output>` with the directories for test cases and results as you do for fuzzing C programs.
