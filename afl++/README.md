@@ -126,7 +126,7 @@ Here is a screenshot:
 > **Different Fuzzing Strategies**:
 >
 > AFL provides a lot of options to fuzzing a program. There is usually not an one-strategy-fits-all option. You should experiments with different strategies. For example, there are many environment variables you can set as listed [here](https://aflplus.plus/docs/env_variables/).
-
+>
 > The following strategy was provided by Benjamin Brecher, which was shown to be very effective: enable AFL_USE_ASAN, AFL_LLVM_LAF_ALL, and AFL_USE_UBSAN before compiling the program with afl-clang-fast. You need to fix the memory leak and strcpy off by one buffer overflow first. He was able to find 32 crashes in about 30 minutes.
 
 ## Fuzzing Python Implementation
@@ -176,7 +176,7 @@ To fuzz Python programs with AFL, you need to install python-afl. Follow the fol
 
 > **A note about parser_bmp_2.py**
 >
-> For the second implementation in Python, you need to make the following changes:
+> For the second implementation in Python, you need to make the following changes first:
 >
 > 1. add this line at the very beginning of the file: `#!/usr/bin/env python3`
 > 2. Put everything (except imports) in the main function.
