@@ -173,3 +173,12 @@ To fuzz Python programs with AFL, you need to install python-afl. Follow the fol
     ```
 
     Replace `<input>` and `<output>` with the directories for test cases and results as you do for fuzzing C programs.
+
+> **A note about parser_bmp_2.py**
+>
+> For the second implementation in Python, you need to make the following changes:
+>
+> 1. add this line at the very beginning of the file: `#!/usr/bin/env python3`
+> 2. Put everything (except imports) in the main function.
+>
+>     Add one additional level of indention to each line of the current code, then insert `def main():` as a new line before the existing code, after imports.
