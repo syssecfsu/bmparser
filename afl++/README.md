@@ -169,7 +169,7 @@ To fuzz Python programs with AFL, you need to install python-afl. Follow the fol
 4. Fuzz your python program with the following command
 
     ```console
-    $ python-afl-fuzz -i <input> -o <output> -m none -t 4000 -D -M fuzzer01 -- ./parse_bmp_1.py @@
+    $ py-afl-fuzz -i <input> -o <output> -m none -t 4000 -D -M fuzzer01 -- ./parse_bmp_1.py @@
     ```
 
     Replace `<input>` and `<output>` with the directories for test cases and results as you do for fuzzing C programs.
